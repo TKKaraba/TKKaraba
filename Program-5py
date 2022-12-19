@@ -1,0 +1,40 @@
+# Pretypovavanie premennych
+
+x = 15
+print (x) # vypise 15
+print (3 * x) # vypise 45 nakolko (3 x 15 je 45)
+x = str (x)  # pretypujeme x povodne int premenu na str cize retazec
+print (x)  # vypise 15
+print (3 * x) # vypise 151515 nakolko sme dali 3 x vypisat retazec
+
+y= int ("FF", base=16) # Prevod zo setnaskovej sustavy string "FF" (to su cisla od 0 az po F) funkciou base=16 a prekonvertuje nam to na cele cislo 255
+print (y)
+
+z = int ("0xFF", base=16)  # Rovnaky vyraz pre "0xFF"  je aj "FF"
+print (z)
+
+
+b = int ("0b10", base=0)   # Prevod z binarnej sustavy na desiatkovu
+print (b)
+
+c = bin(4)   # prekonvertuje desiatkove cislo do binarnej sustavy
+print (c)    # prekonvertuje na 0b100
+
+d = hex(255)  # prekonevertuje desiatkove cislo do hexadecimalneho cisla
+print (d)     # prekonvertuje na 0xff
+
+e = oct(8)  # prekovertuje desiatkove cislo na osmickovu sustavu
+print (e)   # prekonvertuje na 0o10
+
+f = abs(-123)  # abs absolutna hodniota cisla
+print (f)
+
+g = round (3.14)  # zaokruhlovanie cisla 3.14
+h = round (-0.74) # zaokruhlenie cisla -0.74
+i = round (3.14, 1)  # zaokruhli na jedno destatinne cislo
+j = round (2556, -2) # zaokruhli cele cisla o -2 cize posledne dve cisla zaokruhli. Pozor v Pythone sa zaokruhkluje na najblizsie parne cislo
+print (g)        # zaokruhli na 3
+print (h)        # zaokruhli na -1
+print (i)        # zaokruhli na 3.1
+print (j)        # zaokruhli na 2600
+
